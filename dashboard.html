@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+</head>
+<body>
+
+<header>
+
+    <nav>
+
+        <h1>DevHub Dashboard</h1>
+
+        <div>
+
+            <a href="videos.html">Videos</a>
+
+            <a href="progress.html">Progress</a>
+
+            <a href="timer.html">Timer</a>
+
+            <a href="profile.html">Profile</a>
+
+            <button onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<section class="dashboard">
+
+    <div class="card">
+
+        <h2>Overall Progress</h2>
+
+        <div class="progress-bar">
+
+            <div class="progress-fill"
+                 id="overallProgress">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Programming Topics</h2>
+
+        <ul>
+
+            <li>Java</li>
+
+            <li>Python</li>
+
+            <li>JavaScript</li>
+
+            <li>HTML & CSS</li>
+
+            <li>DSA</li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<script src="js/app.js"></script>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>

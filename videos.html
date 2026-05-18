@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Videos</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+</head>
+<body>
+
+<header>
+
+    <nav>
+
+        <h1>Video Library</h1>
+
+    </nav>
+
+</header>
+
+<input type="text"
+       id="searchInput"
+       placeholder="Search Videos..."
+       onkeyup="searchVideos()">
+
+<section class="videos-container"
+         id="videosContainer">
+
+    <div class="video-card">
+
+        <h2>Java Full Course</h2>
+
+        <iframe width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/xk4_1vDrzzo"
+                frameborder="0"
+                allowfullscreen>
+
+        </iframe>
+
+        <button onclick="markWatched(this)">
+            Mark Watched
+        </button>
+
+    </div>
+
+    <div class="video-card">
+
+        <h2>Python Full Course</h2>
+
+        <iframe width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/_uQrJ0TkZlc"
+                frameborder="0"
+                allowfullscreen>
+
+        </iframe>
+
+        <button onclick="markWatched(this)">
+            Mark Watched
+        </button>
+
+    </div>
+
+    <div class="video-card">
+
+        <h2>JavaScript Full Course</h2>
+
+        <iframe width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/PkZNo7MFNFg"
+                frameborder="0"
+                allowfullscreen>
+
+        </iframe>
+
+        <button onclick="markWatched(this)">
+            Mark Watched
+        </button>
+
+    </div>
+
+    <div class="video-card">
+
+        <h2>HTML & CSS Full Course</h2>
+
+        <iframe width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/mU6anWqZJcc"
+                frameborder="0"
+                allowfullscreen>
+
+        </iframe>
+
+        <button onclick="markWatched(this)">
+            Mark Watched
+        </button>
+
+    </div>
+
+</section>
+
+<script src="js/videos.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Profile</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+</head>
+<body>
+
+<div class="profile-box">
+
+    <h1>Profile</h1>
+
+    <p>
+        Email:
+        <span id="profileEmail"></span>
+    </p>
+
+    <input type="text"
+           id="displayName"
+           placeholder="Enter Display Name">
+
+    <button onclick="saveProfile()">
+        Save
+    </button>
+
+</div>
+
+<script>
+
+const email = localStorage.getItem("loggedInUser");
+
+document.getElementById("profileEmail").innerText = email;
+
+function saveProfile() {
+
+    const name =
+        document.getElementById("displayName").value;
+
+    localStorage.setItem("displayName", name);
+
+    alert("Profile Saved");
+}
+
+</script>
+
+</body>
+</html>
